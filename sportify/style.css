@@ -1,0 +1,288 @@
+body{
+    font-family: "Montserrat", sans-serif;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: white;
+}
+.main{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    
+}
+.sidebar{
+    background-color:black;
+    width:18rem;
+    height: 88%;
+    border-radius: .25rem;
+    margin: 7px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+a{
+    text-decoration: none;
+    color:rgb(255,255,255,.7);
+    font-size:.75rem;
+    margin-left: 5%;
+    font-weight: bold;
+    
+}
+.nav .home,.nav .search{
+    height: 30%;
+    color:rgb(255,255,255,.7);
+}
+.search:hover a ,.nav .search:hover {
+    color:rgb(255,255,255);
+
+}
+.nav{
+    background-color:#121212;
+    height:12.5%;
+    border-radius: .25rem;
+    padding:.5rem .75rem;
+    
+
+
+}
+
+  
+.library{
+    background-color:#121212;
+    height: 87.5%;
+    border-radius: .25rem;
+}
+.library .header{
+    height: 10%;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top:1rem;
+}
+.lib-img{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: .5rem;
+}
+.library .your-lib{
+    display:flex;
+    justify-content: flex-start;
+    width: 10rem;
+
+}
+.txt{
+    padding: .25rem;
+    height: 1rem;
+}
+.icon{
+    color: rgb(255, 255, 255,.7);
+}
+.library .your-lib:hover .txt{
+    color: white;
+}
+ .fa-plus:hover,.fa-arrow-right:hover{
+    color: white;
+}
+
+.box{
+    background-color: #232323;
+    padding:.5rem;
+    border-radius:.5rem ;
+    margin:0 .25rem;
+    margin-bottom: 2rem;;
+
+}
+.p-1,.p-2{
+    margin:.5rem 0;
+    padding:0
+}
+
+.p-2{
+    font-weight: lighter;
+}
+.c-p{
+    
+    padding:.5rem .5rem;
+    border-radius: 2rem;
+    font-weight:600;
+    margin-top: 1rem;
+    border: none;
+}
+
+
+
+
+
+
+.main_content{
+    overflow: auto;
+    background-color:#121212;
+    flex: 1;
+    border-radius: .3rem;
+    margin: 7px;
+    margin-left: 0px;
+    height: 88%;
+    padding:0  1rem;
+    
+
+}
+.sticky-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:4rem;
+    background-color:#121212;
+    position: sticky;
+    top: 0;
+}
+.nav-btn{
+     
+    padding:.5rem .5rem;
+    border-radius: 2rem;
+    font-weight:600;
+    font-size: .8rem;
+    margin: 1rem;
+    padding:.5rem .75rem;
+    margin-right: 0rem;
+    border: none;
+}
+.outline{
+   background-color: black;
+    padding:.4.5rem .75rem;
+    color: white;
+}
+
+.music_player{
+    background-color:black;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 10%;
+}
+@media (max-width:1000px){
+    .hide{
+        display:none;
+    }
+}
+.cards-container{
+    display:flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: #232323;
+    width: 10rem;
+    border-radius: .5rem;
+    padding: .5rem;
+}
+.card img{
+    width: 100%;
+  
+    border-radius: .5rem;
+}
+.card .card-info{
+ font-weight: lighter;
+ font-size: .75rem;
+}
+
+.footer{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line{
+    border-top: 4px solid #232323;
+    width: 90%;
+    border-radius: .5rem;
+}
+.music_player{
+    display: flex;
+    padding-left: 1rem;
+
+}
+.album{
+    width: 25%;
+}
+.player{
+    width: 50%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+}
+.player img{
+    width: .8rem;
+    height: .8rem;
+    margin-right: 1.2rem;
+    opacity: .7;
+}
+.player img:hover{
+    opacity: 1;
+}
+.controls{
+    width: 25%;
+}
+.slider{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.slider-bar{
+    height: 3px;
+    width: 55%;
+    margin-top: .3rem;
+    
+}
+.slider span{
+    font-size: .6rem;
+}
+
+.album{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.album-img{
+    width: 3rem;
+    height: 3rem;
+}
+.p1,.p2{
+    padding:0;
+    margin: 0;
+    margin-left: 1rem;
+    font-size: .75rem;
+
+}
+.p1{
+    font-weight:bold;
+}
+.p2{
+    font-weight:300;
+}
+.album-icon-1{
+    margin-left: 1rem;
+}
+.album-icon-2{
+    width: 2rem;
+    margin-left: 1rem;
+}
+.controls{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2rem;
+    gap: 1rem;
+}
+.controls .icon{
+    width: 1.25rem;
+
+   
+
+    
+}
